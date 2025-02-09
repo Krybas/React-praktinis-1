@@ -25,4 +25,5 @@ const TaskForm = ({ addTask }) => {
         </form>
     );
 };
+
 export default TaskForm;

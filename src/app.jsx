@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar";
 import ToDoPage from "./pages/ToDoPage";
+import GuessGamePage from "./pages/GuessGamePage"
 
 export default function App() {
     return (
@@ -12,7 +13,7 @@ export default function App() {
                         <Routes>
                             <Route path="/" element={<ToDoPage />} />
                             <Route path="/antra" element={<h1 className="text-3xl font-bold text-center mb-8">Antra užduotis</h1>} />
-                            <Route path="/trecia" element={<h1 className="text-3xl font-bold text-center mb-8">Trečia užduotis</h1>} />
+                            <Route path="/trecia" element={<GuessGamePage />} />
                         </Routes>
                     </div>
                 </div>
