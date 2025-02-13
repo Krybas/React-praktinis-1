@@ -1,6 +1,6 @@
 
 const TaskItem = ({ task, toggleTask, deleteTask }) => (
-    <li className="flex items-center justify-between p-3 bg-white rounded-lg shadow mb-2">
+    <li className="flex items-center justify-between p-3 bg-white border border-gray-400 rounded-lg shadow mb-2">
         <span className={`flex-grow ${task.completed ? "line-through text-gray-500" : ""}`}>
             {task.text}
         </span>

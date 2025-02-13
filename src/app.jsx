@@ -1,22 +1,19 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar";
 import ToDoPage from "./pages/ToDoPage";
-import GuessGamePage from "./pages/GuessGamePage"
+import GuessGamePage from "./pages/GuessGamePage";
+import CartPage from "./pages/CartPage";
 
 export default function App() {
     return (
         <>
             <Navbar />
-            <main className="min-h-screen bg-gray-100 py-8 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-lg mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div className="px-6 py-8">
+            <main>
                         <Routes>
                             <Route path="/" element={<ToDoPage />} />
-                            <Route path="/antra" element={<h1 className="text-3xl font-bold text-center mb-8">Antra užduotis</h1>} />
+                            <Route path="/antra" element={<CartPage />} />
                             <Route path="/trecia" element={<GuessGamePage />} />
                         </Routes>
-                    </div>
-                </div>
             </main>
         </>
     );
